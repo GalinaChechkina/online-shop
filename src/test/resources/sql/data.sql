@@ -1,0 +1,2 @@
+insert into account(email, hash_password, role, state) values ('admin', 'Qwerty007!', 'ADMIN', 'CONFIRMED')
+insert into account(email, hash_password, role, state) values ('gollum@gmail.com', 'Qwerty007!', 'USER', 'CONFIRMED')

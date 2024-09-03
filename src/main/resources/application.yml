@@ -3,6 +3,10 @@ spring:
 #    username: ${DB_USERNAME}
 #    password: ${DB_PASSWORD}
 #    url: ${DB_URL}
+#  это нужно, чтобы собрать url базы данных от digital ocean
+#    url: jdbc:postgresql://${DB_HOST}:${DB_POST}:/${DB_Name}
+#    username: ${DB_USERNAME}
+#    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update

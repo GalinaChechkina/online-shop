@@ -53,6 +53,8 @@ public class FilesService {
 
         ObjectMetadata metadata = new ObjectMetadata();
         metadata.setContentType(file.getContentType()); // будем сообщать хранилищу какого типа у нас файл
+        metadata.setContentLength(file.getSize()); // надо сообщить амазону размер файла
+
         // создали запрос на отправку файла
         PutObjectRequest request =
                 new PutObjectRequest("online-shop-files", "images/" + newFileName, inputStream, metadata)

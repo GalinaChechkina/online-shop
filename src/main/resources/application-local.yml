@@ -18,6 +18,10 @@ spring:
             enable: true
       debug: true
 
+  servlet:
+    multipart:
+      max-file-size: 10GB
+
 logging:
   level:
     org:

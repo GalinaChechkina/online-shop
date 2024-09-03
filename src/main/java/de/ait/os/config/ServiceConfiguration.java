@@ -60,7 +60,7 @@ public class ServiceConfiguration {
                 .withCredentials(new AWSStaticCredentialsProvider(credentials)); // указываем права доступа
         amazonS3ClientBuilder.setEndpointConfiguration(endpointConfiguration); // указываем куда
 
-        return amazonS3ClientBuilder.build(); // клиент для амазона/digital ocean
+        return amazonS3ClientBuilder.build(); // клиент для амазона от digital ocean
     }
 
     @Bean
